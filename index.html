@@ -26,6 +26,11 @@
 
         html {
             scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        a, button {
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
@@ -874,6 +879,138 @@
 
             .section-header h2 {
                 font-size: 2rem;
+            }
+
+            /* Projects mobile */
+            .projects-list {
+                padding: 0 20px;
+            }
+
+            .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .project-header h3 {
+                font-size: 1.25rem;
+            }
+
+            .project-item > p {
+                font-size: 0.9rem;
+            }
+
+            /* Publications mobile */
+            .publications-list {
+                padding: 0 20px;
+            }
+
+            .publication-content h3 {
+                font-size: 1rem;
+            }
+
+            .publication-content .venue {
+                font-size: 0.85rem;
+            }
+
+            .publication-content a {
+                display: inline-block;
+                margin-right: 12px;
+                margin-top: 8px;
+                font-size: 0.85rem;
+            }
+
+            /* Research mobile */
+            .research-items {
+                padding: 0 20px;
+            }
+
+            /* Contact mobile */
+            .contact-content {
+                padding: 0 20px;
+            }
+
+            .contact-info {
+                padding: 0;
+            }
+
+            .contact-decoration {
+                display: none;
+            }
+
+            /* Hero mobile */
+            .hero {
+                min-height: 70vh;
+                padding: 0 20px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+                letter-spacing: 0.02em;
+            }
+
+            .hero .subtitle {
+                font-size: 0.95rem;
+                padding: 0 20px;
+            }
+
+            .hero .motto {
+                font-size: 0.85rem;
+                padding: 0 20px;
+            }
+
+            .scroll-indicator {
+                bottom: 30px;
+            }
+
+            /* Nav mobile */
+            .nav-logo {
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 0 20px;
+            }
+
+            /* Touch-friendly */
+            a, button {
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+            }
+
+            .lang-switch button {
+                min-height: auto;
+                padding: 8px 12px;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .section-header h2 {
+                font-size: 1.75rem;
+            }
+
+            .about-image {
+                width: 150px;
+                height: 150px;
+                font-size: 3rem;
+            }
+
+            .research-card {
+                padding: 20px;
+            }
+
+            .research-card h3 {
+                font-size: 1.1rem;
+            }
+
+            .research-card p {
+                font-size: 0.85rem;
             }
         }
 
